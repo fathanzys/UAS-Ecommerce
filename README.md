@@ -18,7 +18,7 @@ Proyek ini merupakan bagian dari **Ujian Akhir Semester Mata Kuliah E-Commerce**
 
 ### 📁 Struktur Folder Utama
 
-- dist\pages\forms
+- dist\pages\forms\general.php
 
 ---
 
