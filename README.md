@@ -39,5 +39,6 @@ Semua fitur terkoneksi langsung ke database MySQL melalui `config/config.php`.
 - **Backend:** PHP 7+
 - **Database:** MySQL
 - **Text Editor:** VS Code / PHPStorm
+- **Dokumentasi:** [Drive](https://drive.google.com/drive/folders/1fyCdh111pbDHY1AosQ0f7-srKIo--ugN?usp=sharing) 
 
 ---
