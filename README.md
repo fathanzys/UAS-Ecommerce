@@ -18,10 +18,7 @@ Proyek ini merupakan bagian dari **Ujian Akhir Semester Mata Kuliah E-Commerce**
 
 ### 📁 Struktur Folder Utama
 
-- `pages/buku/` – Menyimpan semua halaman CRUD buku.
-- `config/config.php` – Konfigurasi koneksi database.
-- `index.php` – Halaman dashboard utama.
-- `sidebar.php`, `header.php`, `footer.php` – Layout navigasi template.
+- dist\pages\forms
 
 ---
 
