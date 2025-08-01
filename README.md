@@ -1,4 +1,7 @@
-# [AdminLTE - Bootstrap 5 Admin Dashboard](https://adminlte.io)
+# 📊 AdminLTE 4 - E-Commerce Web Dashboard (UAS Project)
+Nama : Fathan Nabil Arrazani
+NIM : 0102522024
+UAS ECommerce Pengembangan Web
 
 [![npm version](https://img.shields.io/npm/v/admin-lte/latest.svg)](https://www.npmjs.com/package/admin-lte)
 [![Packagist](https://img.shields.io/packagist/v/almasaeed2010/adminlte.svg)](https://packagist.org/packages/almasaeed2010/adminlte)
@@ -6,58 +9,105 @@
 [![Discord Invite](https://img.shields.io/badge/discord-join%20now-green)](https://discord.gg/jfdvjwFqfz)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1277b36b-08f3-43fa-826a-4b4d24614b3c/deploy-status)](https://app.netlify.com/sites/adminlte-v4/deploys)
 
-**AdminLTE** is a fully responsive administration template. Based on **[Bootstrap 5](https://getbootstrap.com/)** framework and also the JavaScript plugins.
-Highly customizable and easy to use. Fits many screen resolutions from small mobile devices to large desktops.
+**AdminLTE** adalah template dashboard berbasis **[Bootstrap 5](https://getbootstrap.com/)** yang responsif, fleksibel, dan sangat dapat dikustomisasi. Cocok untuk berbagai ukuran layar — mulai dari smartphone hingga desktop.
 
-## Looking for Premium Templates?
+## 🧑‍🎓 Tentang Proyek Ini
 
-AdminLTE.io just opened a new premium templates page. Hand picked to ensure the best quality and the most affordable
-prices. Visit <https://adminlte.io/premium> for more information.
+Proyek ini merupakan bagian dari **UAS Mata Kuliah E-Commerce**. Pengembangan fitur CRUD data buku berbasis PHP dilakukan di dalam template **AdminLTE v4.0.0-beta3**.
 
-!["AdminLTE Presentation"](https://adminlte.io/AdminLTE3.png "AdminLTE Presentation")
+🔧 **File utama pengembangan ada di:**
+AdminLTE-4.0.0-beta3/dist/pages/forms/general.php
 
-**AdminLTE** has been carefully coded with clear comments in all of its JS, SCSS and HTML files.
-SCSS has been used to increase code customizability.
+markdown
+Salin
+Edit
 
-## Quick start
+Halaman tersebut berfungsi sebagai **form pengelolaan data buku**, mencakup fitur:
+- Tambah data
+- Edit data
+- Hapus data
+- Tampilkan data dalam bentuk tabel
 
-### Compile dist files
+## ✨ Fitur Utama Template AdminLTE
 
-To compile the dist files you need Node.js/npm, clone/download the repo then:
+- Dashboard admin berbasis Bootstrap 5
+- Dukungan plugin JavaScript seperti Chart.js, overlayScrollbars, dsb.
+- Tersedia banyak komponen UI siap pakai (form, table, card, dsb)
+- Struktur folder yang rapi dan scalable
 
-1. `npm install` (install npm deps)
-2. _Optional:_ `npm run dev` (developer mode, autocompile with browsersync support for live demo)
-3. `npm run production` (compile css/js files)
+![AdminLTE Preview](https://adminlte.io/AdminLTE3.png "AdminLTE Presentation")
 
+---
 
-## Contributing
+## ⚙️ Cara Menjalankan Proyek
 
-- Highly welcome.
-- For your extra reference check [AdminLTE v4 Contribution Guide](https://github.com/ColorlibHQ/AdminLTE#contributing)
-- First thing first, you should have bit knowledge about NodeJS.
-- Github Knowledge.
-- Install NodeJS LTS version.
-- Clone this Repository to your machine and change to `master` branch.
-- Go to Cloned Folder.
-- In cli/bash run `npm install` it will install dependency from `package.json`.
-- After installation completes, run `npm run dev`
-- Cool, Send urs changes in PR to `master` branch.
+1. **Clone repo ini** atau download folder `AdminLTE-4.0.0-beta3`
+2. Letakkan folder dalam direktori `htdocs` XAMPP
+3. Pastikan sudah membuat database MySQL bernama `db_perpustakaan`
+4. Buat tabel `buku`:
+   ```sql
+   CREATE TABLE buku (
+     id INT AUTO_INCREMENT PRIMARY KEY,
+     judul VARCHAR(255) NOT NULL,
+     penulis VARCHAR(255) NOT NULL,
+     penerbit VARCHAR(255) NOT NULL,
+     tahun_terbit INT NOT NULL,
+     isbn VARCHAR(50) NOT NULL
+   );
+Jalankan XAMPP dan akses:
 
-## Sponsorship
+bash
+Salin
+Edit
+http://localhost/AdminLTE-4.0.0-beta3/dist/pages/forms/general.php
+🛠️ Teknologi yang Digunakan
+HTML, CSS, Bootstrap 5
 
-Support AdminLTE development by becoming a sponsor.
-[Github Sponsors](https://github.com/sponsors/danny007in) or
-[PayPal](https://www.paypal.me/daniel007in)
+PHP Native
 
-## License
+MySQL (via XAMPP)
 
-AdminLTE is an open source project by [AdminLTE.io](https://adminlte.io) that is licensed under [MIT](https://opensource.org/licenses/MIT).
-AdminLTE.io reserves the right to change the license of future releases.
+AdminLTE v4 Template
 
-## Image Credits
+📁 Struktur Folder Penting
+arduino
+Salin
+Edit
+AdminLTE-4.0.0-beta3/
+├── dist/
+│   └── pages/
+│       └── forms/
+│           └── general.php   ← File utama UAS
+├── plugins/
+├── index.html
+├── README.md
+└── ...
+💡 Catatan Pengembangan
+Kode PHP ditanam langsung di dalam file general.php
 
-- [Pixeden](http://www.pixeden.com/psd-web-elements/flat-responsive-showcase-psd)
-- [Graphicsfuel](https://www.graphicsfuel.com/2013/02/13-high-resolution-blur-backgrounds/)
-- [Pickaface](https://pickaface.net/)
-- [Unsplash](https://unsplash.com/)
-- [Uifaces](http://uifaces.com/)
+Koneksi database disambungkan di bagian atas script
+
+Validasi dasar dan pesan error/sukses sudah disiapkan
+
+Belum menggunakan framework tambahan (seperti Laravel)
+
+📌 Lisensi
+AdminLTE adalah proyek open-source yang dilisensikan di bawah MIT License. Hak cipta untuk template asli dimiliki oleh AdminLTE.io.
+
+🙏 Ucapan Terima Kasih
+Template dan sumber daya visual:
+
+AdminLTE.io
+
+Bootstrap
+
+Unsplash
+
+UIfaces
+
+📬 Kontak (Opsional)
+Nama: [Nama Anda]
+NIM: [NIM Anda]
+Kelas: E-Commerce [Kelas]
+Email: [Email Anda]
+
